@@ -24,7 +24,8 @@ After designing the data warehouse, the implementation of it was carried out on 
 Using SSIS, I implemented the ETL process on this sequence :
 
 
-![Untitled2](https://github.com/Arwa0/northwind-date-warehouse/assets/74055031/cf3944b3-2430-4685-bcd7-683ef2b747f5)
+![image](https://github.com/Arwa0/northwind-date-warehouse/assets/74055031/52d586f0-fe20-4b0f-b326-d935fd1eb001)
+
 
 
 There is an example for loading data in ' ship_info ' :
