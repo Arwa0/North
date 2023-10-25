@@ -13,7 +13,8 @@ Northwind is a widely used educational database created by Microsoft, designed t
 
 ## Star Schema for the datawarehouse :
 
-![star schema datawarehouse Northwind](https://github.com/Arwa0/northwind-date-warehouse/assets/74055031/f423ab77-5be8-4f26-b6a4-b52a39baf8c2)
+![275851290-f423ab77-5be8-4f26-b6a4-b52a39baf8c2](https://github.com/Arwa0/northwind-date-warehouse/assets/74055031/913f2124-0c9e-49d0-af87-7ede034e41b2)
+
 
  A star schema has one fact table containing all the measurements we need about the any order have been placed , and containing all foreign keys from other dimentions. including the key of the bridged table 'ship_info'
 
@@ -22,18 +23,22 @@ Northwind is a widely used educational database created by Microsoft, designed t
 After designing the data warehouse, the implementation of it was carried out on SQL Server, as its code is shown in the file.
 Using SSIS, I implemented the ETL process on this sequence :
 
-![Untitled](https://github.com/Arwa0/northwind-date-warehouse/assets/74055031/55da43be-1ad1-4aeb-8d51-fa6167de95ae)
+
+![Untitled2](https://github.com/Arwa0/northwind-date-warehouse/assets/74055031/cf3944b3-2430-4685-bcd7-683ef2b747f5)
+
 
 There is an example for loading data in ' ship_info ' :
 
-![Untitled](https://github.com/Arwa0/northwind-date-warehouse/assets/74055031/df8289ee-72a7-4135-bdae-121fb033e38a)
+
+![275880971-df8289ee-72a7-4135-bdae-121fb033e38a](https://github.com/Arwa0/northwind-date-warehouse/assets/74055031/14576a7b-668a-490e-b5d0-1ead03fc7a02)
 
 For Fact Table loading:
 
 
-The first step involved collecting all the IDs from tables in the database using a Merge Join transformation in the same place. Next, I used a Lookup transformation to obtain the surrogate key for each dimension, applying any necessary transformations as needed. Here is the data flow task for the fact table
+The first step involved collecting all the IDs from tables in the database using a Merge Join transformation in the same place. Next, I used a Lookup transformation to obtain the surrogate key for each dimension, applying any necessary transformations as needed. Here is the data flow task for the fact table :
  
-![Untitled](https://github.com/Arwa0/northwind-date-warehouse/assets/74055031/5df5a802-c94d-4aeb-b225-3d622ab49857)
+![Untitled](https://github.com/Arwa0/northwind-date-warehouse/assets/74055031/045eb39c-3f17-4655-bfc9-2ad37260fbf9)
+
 
 
 for more about the transformation done in fact table , you can download the project and see it !
